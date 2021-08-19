@@ -12,61 +12,70 @@ import (
 	"strconv"
 )
 
-func GetRewardInfo(ownerId string)(response model.Reward,err error){
-	body := fmt.Sprintf(consts.PowerBody,ownerId)
-
+func GetRewardInfo(ownerId string) (response model.Reward, err error) {
+	body := fmt.Sprintf(consts.PowerBody, ownerId)
 	btr := bytes.NewReader([]byte(body))
-	r,err := http.Post(consts.FilsUrl,consts.ContentType,btr)
+	r, err := http.Post(consts.FilsUrl, consts.ContentType, btr)
 	if err != nil {
-		log.Println(consts.FilsUrl,err)
+		log.Println(consts.FilsUrl, err)
 		return
 	}
-	b,err := ioutil.ReadAll(r.Body)
+	b, err := ioutil.ReadAll(r.Body)
 	if err != nil {
 		log.Println(err)
 		return
 	}
 	resp := model.PowerResp{}
-	if err = json.Unmarshal(b,&resp);err != nil {
+	if err = json.Unmarshal(b, &resp); err != nil {
 		panic(err)
 	}
-	if len(resp.Result) != 0 {
-		response.Power = resp.Result[0].Power
-	}
-	body = fmt.Sprintf(consts.RewardBody,ownerId)
+	body = fmt.Sprintf(consts.RewardBody, ownerId)
 	btr = bytes.NewReader([]byte(body))
-	r,err = http.Post(consts.FilsUrl,consts.ContentType,btr)
+	r, err = http.Post(consts.FilsUrl, consts.ContentType, btr)
 	if err != nil {
 		log.Println(err)
 		return
 	}
-	b,err = ioutil.ReadAll(r.Body)
+	b, err = ioutil.ReadAll(r.Body)
 	if err != nil {
 		log.Println(err)
 		return
 	}
 	reward := model.RewardResp{}
-	if err = json.Unmarshal(b,&reward);err != nil {
+	if err = json.Unmarshal(b, &reward); err != nil {
 		log.Println(err)
 		return
 	}
+	//prd, err := strconv.ParseFloat(reward.Result.Reward, 64)
+	//if err != nil {
+	//	return
+	//}
+	//re := prd / math.Pow(10.0000, 18)
+	//
+	//p1, err := strconv.ParseFloat(resp.Result.Extra.Power, 64)
+	//if err != nil {
+	//	return
+	//}
+	//r1 := p1 / math.Pow(1024.00, 5)
+	//response.Reward = fmt.Sprintf("%.5f", re)
+	//response.Power = fmt.Sprintf("%.2f", r1)
 	response.Reward = reward.Result.Reward
+	response.Power = resp.Result.Extra.Power
 	return
 }
 
-
-func GetMiningCost()(response model.MiningCost,err error) {
+func GetMiningCost() (response model.MiningCost, err error) {
 	btr := bytes.NewReader([]byte(consts.PledgeperteraBody))
-	r ,err := http.Post(consts.FilsUrl,consts.ContentType,btr)
-	if  err != nil{
+	r, err := http.Post(consts.FilsUrl, consts.ContentType, btr)
+	if err != nil {
 		return
 	}
 	b, err := ioutil.ReadAll(r.Body)
-	if err != nil{
+	if err != nil {
 		return
 	}
 	resp := model.PledgePerTeraResp{}
-	if err = json.Unmarshal(b,&resp);err !=nil{
+	if err = json.Unmarshal(b, &resp); err != nil {
 		return
 	}
 	btr = bytes.NewReader([]byte(consts.GascostperBody))
@@ -86,7 +95,7 @@ func GetMiningCost()(response model.MiningCost,err error) {
 	var avg float64
 	for _, v := range gasresp.Result.BasefeePoints {
 		if v.GasCost32g != "" {
-			g32,err := strconv.ParseFloat(v.GasCost32g, 64)
+			g32, err := strconv.ParseFloat(v.GasCost32g, 64)
 			if err != nil {
 				continue
 			}
@@ -95,16 +104,15 @@ func GetMiningCost()(response model.MiningCost,err error) {
 	}
 	l := len(gasresp.Result.BasefeePoints)
 	avg = avg / float64(l)
-	per,err  := strconv.ParseFloat(resp.Result.Data.PledgePerTera,64)
+	per, err := strconv.ParseFloat(resp.Result.Data.PledgePerTera, 64)
 	if err != nil {
 		return
 	}
 	response = model.MiningCost{
 		SectorSize:       "32GiB",
-		GasCostPerTiB:    fmt.Sprintf("%.5f",avg),
-		PledgeCostPerTiB: fmt.Sprintf("%.5f",per),
-		TotalCostPerTiB:  fmt.Sprintf("%.5f",per + avg),
+		GasCostPerTiB:    fmt.Sprintf("%.5f", avg),
+		PledgeCostPerTiB: fmt.Sprintf("%.5f", per),
+		TotalCostPerTiB:  fmt.Sprintf("%.5f", per+avg),
 	}
 	return
 }
-

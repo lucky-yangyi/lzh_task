@@ -5,9 +5,9 @@ import (
 	"lzh-tsak/controller"
 )
 
-func Router()*gin.Engine{
+func Router() *gin.Engine {
 	r := gin.New()
-	r.GET("/getFilscanInfo",controller.GetFilsInfo)
-	r.GET("/getPowers",controller.GetPowers)
+	r.GET("/api/MiningEarnings/RewardInfo", controller.GetFilsInfo)
+	r.GET("/api/MiningCost", controller.GetPowers)
 	return r
 }

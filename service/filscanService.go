@@ -8,37 +8,37 @@ import (
 	"time"
 )
 
-func GetFilsInfo(ownerId string,date string) (resp model.FilscanInfo,err error){
+func GetFilsInfo(ownerId string, date string) (resp model.FilscanInfo, err error) {
 	var (
 		start time.Time
-		end time.Time
+		end   time.Time
 	)
 	if date == "" {
-		t,err := time.Parse(consts.YYYYMMDD, time.Now().AddDate(0,0,-1).Format(consts.YYYYMMDD))
+		t, err := time.Parse(consts.YYYYMMDD, time.Now().AddDate(0, 0, -1).Format(consts.YYYYMMDD))
 		if err != nil {
-			return resp,err
+			return resp, err
 		}
 		start = t
-		end = start.AddDate(0,0,1)
-	}else {
-		t,err := time.Parse(consts.YYYYMMDD,date)
+		end = start.AddDate(0, 0, 1)
+	} else {
+		t, err := time.Parse(consts.YYYYMMDD, date)
 		if err != nil {
-			return resp,err
+			return resp, err
 		}
 		start = t
-		end = start.AddDate(0,0,1)
+		end = start.AddDate(0, 0, 1)
 	}
-	reward,err := dao.GetReward(ownerId,start,end)
+	reward, err := dao.GetReward(ownerId, start, end)
 	if err != nil {
 		if date == "" {
-			reward,err = api.GetRewardInfo(ownerId)
+			reward, err = api.GetRewardInfo(ownerId)
 			if err != nil {
 				return
 			}
-		}else {
+		} else {
 			return
 		}
- 	}
+	}
 	//p,err := strconv.ParseInt(reward.Reward, 10, 64)
 	//if err != nil {
 	//	return
@@ -51,6 +51,6 @@ func GetFilsInfo(ownerId string,date string) (resp model.FilscanInfo,err error){
 	return
 }
 
-func GetListPower() (resp model.MiningCost,err error) {
+func GetListPower() (resp model.MiningCost, err error) {
 	return api.GetMiningCost()
 }

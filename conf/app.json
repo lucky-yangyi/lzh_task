@@ -1,0 +1,8 @@
+{
+  "type": "mysql",
+  "host": "39.105.87.85:3306",
+  "root": "root",
+  "pwd": "xs)jYDuA;5?4",
+  "name": "lzh-task",
+  "port": ":14107"
+}

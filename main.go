@@ -1,13 +1,14 @@
 package main
 
 import (
+	"lzh-tsak/config"
 	"lzh-tsak/router"
 	"lzh-tsak/task"
 )
 
-func main()  {
+func main() {
 	//task.SpiderFilscan()
 	go task.TaskStart()
 	engine := router.Router()
-	engine.Run(":8080")
+	engine.Run(config.Config.Port)
 }
