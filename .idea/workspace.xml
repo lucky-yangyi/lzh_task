@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8bcaf400-ac3e-4306-b565-63613c6ed1fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/yangyi.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/terminal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/terminal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/filscan.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/filscan.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/resp.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/resp.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/reward.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/reward.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/filscanService.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/filscanService.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task/task.go" beforeDir="false" afterPath="$PROJECT_DIR$/task/task.go" afterDir="false" />
-    </list>
+    <list default="true" id="8bcaf400-ac3e-4306-b565-63613c6ed1fa" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
