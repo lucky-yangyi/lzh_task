@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	//task.SpiderFilscan()
+	task.SpiderFilscan()
 	go task.TaskStart()
 	engine := router.Router()
 	engine.Run(config.Config.Port)

@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8bcaf400-ac3e-4306-b565-63613c6ed1fa" name="Default Changelist" comment="" />
+    <list default="true" id="8bcaf400-ac3e-4306-b565-63613c6ed1fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/yangyi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/terminal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/terminal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/filscan.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/filscan.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/conf/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/resp.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/resp.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/reward.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/reward.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/filscanService.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/filscanService.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task/task.go" beforeDir="false" afterPath="$PROJECT_DIR$/task/task.go" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,12 +31,14 @@
   </component>
   <component name="GOROOT" path="/usr/local/go" />
   <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="1wr7PzPNHNsWHsVIo9PFIWhPiS7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,20 +46,48 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="go.sdk" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
-  <component name="RunManager" selected="Go Build.go build lzh-tsak">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Go Build.go build lzh-tsak (1)">
+    <configuration name="go build lzh-tsak (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="lzh-tsak" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="lzh-tsak" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build lzh-tsak" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="lzh-tsak" />
       <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main1.go" />
       <package value="lzh-tsak" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -60,22 +105,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build lzh-tsak (1)" />
         <item itemvalue="Go Build.go build lzh-tsak" />
         <item itemvalue="Go Test.TestGetMiningCost in lzh-tsak/task" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SshConsoleOptionsProvider">
     <option name="myEncoding" value="UTF-8" />
@@ -85,9 +119,26 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="&quot;Project optimizations and errors&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Project optimizations and errors&quot;" />
+  </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
-    <proxy>direct</proxy>
+    <proxy>https://goproxy.cn</proxy>
   </component>
   <component name="WindowStateProjectService">
     <state x="429" y="23" key="#TestGetMiningCost_in_lzh-tsak/task" timestamp="1629213391883">
@@ -99,74 +150,103 @@
     </state>
     <state x="466" y="192" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.790@0.23.1440.790" timestamp="1629208105070" />
     <state x="466" y="193" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.795@0.23.1440.795" timestamp="1629271519038" />
-    <state width="1398" height="204" key="GridCell.Tab.0.bottom" timestamp="1629271528890">
-      <screen x="0" y="23" width="1440" height="795" />
-    </state>
-    <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.23.1440.790@0.23.1440.790" timestamp="1629216739617" />
-    <state width="1398" height="110" key="GridCell.Tab.0.bottom/0.23.1440.792@0.23.1440.792" timestamp="1629266484757" />
-    <state width="1398" height="204" key="GridCell.Tab.0.bottom/0.23.1440.795@0.23.1440.795" timestamp="1629271528890" />
-    <state width="1398" height="204" key="GridCell.Tab.0.center" timestamp="1629271528889">
-      <screen x="0" y="23" width="1440" height="795" />
-    </state>
-    <state width="1398" height="207" key="GridCell.Tab.0.center/0.23.1440.790@0.23.1440.790" timestamp="1629216739617" />
-    <state width="1398" height="110" key="GridCell.Tab.0.center/0.23.1440.792@0.23.1440.792" timestamp="1629266484756" />
-    <state width="1398" height="204" key="GridCell.Tab.0.center/0.23.1440.795@0.23.1440.795" timestamp="1629271528889" />
-    <state width="1398" height="204" key="GridCell.Tab.0.left" timestamp="1629271528889">
-      <screen x="0" y="23" width="1440" height="795" />
-    </state>
-    <state width="1398" height="207" key="GridCell.Tab.0.left/0.23.1440.790@0.23.1440.790" timestamp="1629216739617" />
-    <state width="1398" height="110" key="GridCell.Tab.0.left/0.23.1440.792@0.23.1440.792" timestamp="1629266484756" />
-    <state width="1398" height="204" key="GridCell.Tab.0.left/0.23.1440.795@0.23.1440.795" timestamp="1629271528889" />
-    <state width="1398" height="204" key="GridCell.Tab.0.right" timestamp="1629271528890">
-      <screen x="0" y="23" width="1440" height="795" />
-    </state>
-    <state width="1398" height="207" key="GridCell.Tab.0.right/0.23.1440.790@0.23.1440.790" timestamp="1629216739617" />
-    <state width="1398" height="110" key="GridCell.Tab.0.right/0.23.1440.792@0.23.1440.792" timestamp="1629266484757" />
-    <state width="1398" height="204" key="GridCell.Tab.0.right/0.23.1440.795@0.23.1440.795" timestamp="1629271528890" />
-    <state width="1398" height="204" key="GridCell.Tab.1.bottom" timestamp="1629271528842">
-      <screen x="0" y="23" width="1440" height="795" />
-    </state>
-    <state width="1398" height="207" key="GridCell.Tab.1.bottom/0.23.1440.790@0.23.1440.790" timestamp="1629216743980" />
-    <state width="1398" height="110" key="GridCell.Tab.1.bottom/0.23.1440.792@0.23.1440.792" timestamp="1629266484891" />
-    <state width="1398" height="204" key="GridCell.Tab.1.bottom/0.23.1440.795@0.23.1440.795" timestamp="1629271528842" />
-    <state width="1398" height="204" key="GridCell.Tab.1.center" timestamp="1629271528841">
-      <screen x="0" y="23" width="1440" height="795" />
-    </state>
-    <state width="1398" height="207" key="GridCell.Tab.1.center/0.23.1440.790@0.23.1440.790" timestamp="1629216743979" />
-    <state width="1398" height="110" key="GridCell.Tab.1.center/0.23.1440.792@0.23.1440.792" timestamp="1629266484890" />
-    <state width="1398" height="204" key="GridCell.Tab.1.center/0.23.1440.795@0.23.1440.795" timestamp="1629271528841" />
-    <state width="1398" height="204" key="GridCell.Tab.1.left" timestamp="1629271528841">
-      <screen x="0" y="23" width="1440" height="795" />
-    </state>
-    <state width="1398" height="207" key="GridCell.Tab.1.left/0.23.1440.790@0.23.1440.790" timestamp="1629216743979" />
-    <state width="1398" height="110" key="GridCell.Tab.1.left/0.23.1440.792@0.23.1440.792" timestamp="1629266484890" />
-    <state width="1398" height="204" key="GridCell.Tab.1.left/0.23.1440.795@0.23.1440.795" timestamp="1629271528841" />
-    <state width="1398" height="204" key="GridCell.Tab.1.right" timestamp="1629271528842">
-      <screen x="0" y="23" width="1440" height="795" />
-    </state>
-    <state width="1398" height="207" key="GridCell.Tab.1.right/0.23.1440.790@0.23.1440.790" timestamp="1629216743980" />
-    <state width="1398" height="110" key="GridCell.Tab.1.right/0.23.1440.792@0.23.1440.792" timestamp="1629266484891" />
-    <state width="1398" height="204" key="GridCell.Tab.1.right/0.23.1440.795@0.23.1440.795" timestamp="1629271528842" />
-    <state width="720" height="362" key="XDebugger.FullValuePopup" timestamp="1629269628859">
-      <screen x="0" y="23" width="1440" height="795" />
-    </state>
-    <state width="720" height="359" key="XDebugger.FullValuePopup/0.23.1440.790@0.23.1440.790" timestamp="1629211890450" />
-    <state width="720" height="360" key="XDebugger.FullValuePopup/0.23.1440.792@0.23.1440.792" timestamp="1629264100092" />
-    <state width="720" height="362" key="XDebugger.FullValuePopup/0.23.1440.795@0.23.1440.795" timestamp="1629269628859" />
-    <state x="386" y="144" width="816" height="540" key="find.popup" timestamp="1629215848923">
+    <state x="429" y="29" key="#go_build_lzh-tsak" timestamp="1629293156341">
       <screen x="0" y="23" width="1440" height="790" />
     </state>
-    <state x="386" y="144" width="816" height="540" key="find.popup/0.23.1440.790@0.23.1440.790" timestamp="1629215848923" />
+    <state x="429" y="29" key="#go_build_lzh-tsak/0.23.1440.790@0.23.1440.790" timestamp="1629293156341" />
+    <state x="429" y="29" key="#go_build_lzh-tsak_(1)" timestamp="1629293189919">
+      <screen x="0" y="23" width="1440" height="790" />
+    </state>
+    <state x="429" y="29" key="#go_build_lzh-tsak_(1)/0.23.1440.790@0.23.1440.790" timestamp="1629293189919" />
+    <state x="328" y="23" width="812" height="790" key="CommitChangelistDialog2" timestamp="1629370788202">
+      <screen x="0" y="23" width="1440" height="790" />
+    </state>
+    <state x="328" y="23" width="812" height="790" key="CommitChangelistDialog2/0.23.1440.790@0.23.1440.790" timestamp="1629370788202" />
+    <state width="1398" height="210" key="GridCell.Tab.0.bottom" timestamp="1629453476372">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state width="1398" height="336" key="GridCell.Tab.0.bottom/0.23.1440.790@0.23.1440.790" timestamp="1629362334589" />
+    <state width="1398" height="110" key="GridCell.Tab.0.bottom/0.23.1440.792@0.23.1440.792" timestamp="1629266484757" />
+    <state width="1398" height="199" key="GridCell.Tab.0.bottom/0.23.1440.795@0.23.1440.795" timestamp="1629273490905" />
+    <state width="1398" height="210" key="GridCell.Tab.0.bottom/0.23.1440.798@0.23.1440.798" timestamp="1629453476372" />
+    <state width="1398" height="210" key="GridCell.Tab.0.center" timestamp="1629453476371">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state width="1398" height="336" key="GridCell.Tab.0.center/0.23.1440.790@0.23.1440.790" timestamp="1629362334588" />
+    <state width="1398" height="110" key="GridCell.Tab.0.center/0.23.1440.792@0.23.1440.792" timestamp="1629266484756" />
+    <state width="1398" height="199" key="GridCell.Tab.0.center/0.23.1440.795@0.23.1440.795" timestamp="1629273490905" />
+    <state width="1398" height="210" key="GridCell.Tab.0.center/0.23.1440.798@0.23.1440.798" timestamp="1629453476371" />
+    <state width="1398" height="210" key="GridCell.Tab.0.left" timestamp="1629453476370">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state width="1398" height="336" key="GridCell.Tab.0.left/0.23.1440.790@0.23.1440.790" timestamp="1629362334588" />
+    <state width="1398" height="110" key="GridCell.Tab.0.left/0.23.1440.792@0.23.1440.792" timestamp="1629266484756" />
+    <state width="1398" height="199" key="GridCell.Tab.0.left/0.23.1440.795@0.23.1440.795" timestamp="1629273490905" />
+    <state width="1398" height="210" key="GridCell.Tab.0.left/0.23.1440.798@0.23.1440.798" timestamp="1629453476370" />
+    <state width="1398" height="210" key="GridCell.Tab.0.right" timestamp="1629453476371">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state width="1398" height="336" key="GridCell.Tab.0.right/0.23.1440.790@0.23.1440.790" timestamp="1629362334589" />
+    <state width="1398" height="110" key="GridCell.Tab.0.right/0.23.1440.792@0.23.1440.792" timestamp="1629266484757" />
+    <state width="1398" height="199" key="GridCell.Tab.0.right/0.23.1440.795@0.23.1440.795" timestamp="1629273490905" />
+    <state width="1398" height="210" key="GridCell.Tab.0.right/0.23.1440.798@0.23.1440.798" timestamp="1629453476371" />
+    <state width="1398" height="210" key="GridCell.Tab.1.bottom" timestamp="1629453480838">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state width="1398" height="336" key="GridCell.Tab.1.bottom/0.23.1440.790@0.23.1440.790" timestamp="1629362334590" />
+    <state width="1398" height="110" key="GridCell.Tab.1.bottom/0.23.1440.792@0.23.1440.792" timestamp="1629266484891" />
+    <state width="1398" height="199" key="GridCell.Tab.1.bottom/0.23.1440.795@0.23.1440.795" timestamp="1629273490906" />
+    <state width="1398" height="210" key="GridCell.Tab.1.bottom/0.23.1440.798@0.23.1440.798" timestamp="1629453480838" />
+    <state width="1398" height="210" key="GridCell.Tab.1.center" timestamp="1629453480837">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state width="1398" height="336" key="GridCell.Tab.1.center/0.23.1440.790@0.23.1440.790" timestamp="1629362334589" />
+    <state width="1398" height="110" key="GridCell.Tab.1.center/0.23.1440.792@0.23.1440.792" timestamp="1629266484890" />
+    <state width="1398" height="199" key="GridCell.Tab.1.center/0.23.1440.795@0.23.1440.795" timestamp="1629273490905" />
+    <state width="1398" height="210" key="GridCell.Tab.1.center/0.23.1440.798@0.23.1440.798" timestamp="1629453480837" />
+    <state width="1398" height="210" key="GridCell.Tab.1.left" timestamp="1629453480837">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state width="1398" height="336" key="GridCell.Tab.1.left/0.23.1440.790@0.23.1440.790" timestamp="1629362334589" />
+    <state width="1398" height="110" key="GridCell.Tab.1.left/0.23.1440.792@0.23.1440.792" timestamp="1629266484890" />
+    <state width="1398" height="199" key="GridCell.Tab.1.left/0.23.1440.795@0.23.1440.795" timestamp="1629273490905" />
+    <state width="1398" height="210" key="GridCell.Tab.1.left/0.23.1440.798@0.23.1440.798" timestamp="1629453480837" />
+    <state width="1398" height="210" key="GridCell.Tab.1.right" timestamp="1629453480838">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state width="1398" height="336" key="GridCell.Tab.1.right/0.23.1440.790@0.23.1440.790" timestamp="1629362334590" />
+    <state width="1398" height="110" key="GridCell.Tab.1.right/0.23.1440.792@0.23.1440.792" timestamp="1629266484891" />
+    <state width="1398" height="199" key="GridCell.Tab.1.right/0.23.1440.795@0.23.1440.795" timestamp="1629273490906" />
+    <state width="1398" height="210" key="GridCell.Tab.1.right/0.23.1440.798@0.23.1440.798" timestamp="1629453480838" />
+    <state x="334" y="138" key="Vcs.Push.Dialog.v2" timestamp="1629370800383">
+      <screen x="0" y="23" width="1440" height="790" />
+    </state>
+    <state x="334" y="138" key="Vcs.Push.Dialog.v2/0.23.1440.790@0.23.1440.790" timestamp="1629370800383" />
+    <state width="720" height="363" key="XDebugger.FullValuePopup" timestamp="1629453200658">
+      <screen x="0" y="23" width="1440" height="798" />
+    </state>
+    <state width="720" height="359" key="XDebugger.FullValuePopup/0.23.1440.790@0.23.1440.790" timestamp="1629291238498" />
+    <state width="720" height="360" key="XDebugger.FullValuePopup/0.23.1440.792@0.23.1440.792" timestamp="1629264100092" />
+    <state width="720" height="362" key="XDebugger.FullValuePopup/0.23.1440.795@0.23.1440.795" timestamp="1629269628859" />
+    <state width="720" height="363" key="XDebugger.FullValuePopup/0.23.1440.798@0.23.1440.798" timestamp="1629453200658" />
+    <state x="386" y="144" width="816" height="540" key="find.popup" timestamp="1629293081931">
+      <screen x="0" y="23" width="1440" height="790" />
+    </state>
+    <state x="386" y="144" width="816" height="540" key="find.popup/0.23.1440.790@0.23.1440.790" timestamp="1629293081931" />
     <state x="385" y="137" width="670" height="676" key="search.everywhere.popup" timestamp="1629209300190">
       <screen x="0" y="23" width="1440" height="790" />
     </state>
     <state x="385" y="137" width="670" height="676" key="search.everywhere.popup/0.23.1440.790@0.23.1440.790" timestamp="1629209300190" />
   </component>
   <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="GoApplicationRunConfiguration">
-        <watch expression="*(*&quot;int&quot;)(6)" />
-      </configuration>
-    </watches-manager>
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/task/task.go</url>
+          <line>27</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

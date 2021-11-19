@@ -1,8 +1,8 @@
 package model
 
 type Reward struct {
-	Power     string
-	Reward    string
+	Power     int64
+	Reward    int64
 	CreatedAt string
 	OwnerId   string
 }

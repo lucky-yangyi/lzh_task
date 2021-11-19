@@ -5,6 +5,7 @@ import (
 	"lzh-tsak/consts"
 	"lzh-tsak/dao"
 	"lzh-tsak/model"
+	"strconv"
 	"time"
 )
 
@@ -39,14 +40,14 @@ func GetFilsInfo(ownerId string, date string) (resp model.FilscanInfo, err error
 			return
 		}
 	}
-	//p,err := strconv.ParseInt(reward.Reward, 10, 64)
-	//if err != nil {
-	//	return
-	//}
+	p,err := strconv.ParseInt(reward.Reward, 10, 64)
+		//if err != nil {
+		//	return
+		//}
 
 	resp = model.FilscanInfo{
 		QualityAdjPower: reward.Power,
-		Reward24Hours:   reward.Reward,
+		Reward24Hours:  reward.Reward,
 	}
 	return
 }

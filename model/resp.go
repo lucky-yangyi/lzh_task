@@ -14,6 +14,6 @@ type MiningCost struct {
 }
 
 type FilscanInfo struct {
-	QualityAdjPower string `json:"qualityAdjPower"`
-	Reward24Hours   string `json:"reward24Hours"`
+	QualityAdjPower int64 `json:"qualityAdjPower"`
+	Reward24Hours   int64 `json:"reward24Hours"`
 }

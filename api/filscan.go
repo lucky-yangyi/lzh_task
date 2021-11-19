@@ -11,7 +11,7 @@ import (
 	"net/http"
 	"strconv"
 )
-
+//Obtaining node revenue
 func GetRewardInfo(ownerId string) (response model.Reward, err error) {
 	body := fmt.Sprintf(consts.PowerBody, ownerId)
 	btr := bytes.NewReader([]byte(body))
@@ -46,10 +46,10 @@ func GetRewardInfo(ownerId string) (response model.Reward, err error) {
 		log.Println(err)
 		return
 	}
-	//prd, err := strconv.ParseFloat(reward.Result.Reward, 64)
-	//if err != nil {
-	//	return
-	//}
+	prd, err := strconv.ParseFloat(reward.Result.Reward, 64)
+	if err != nil {
+		return
+	}
 	//re := prd / math.Pow(10.0000, 18)
 	//
 	//p1, err := strconv.ParseFloat(resp.Result.Extra.Power, 64)
@@ -57,13 +57,19 @@ func GetRewardInfo(ownerId string) (response model.Reward, err error) {
 	//	return
 	//}
 	//r1 := p1 / math.Pow(1024.00, 5)
-	//response.Reward = fmt.Sprintf("%.5f", re)
-	//response.Power = fmt.Sprintf("%.2f", r1)
-	response.Reward = reward.Result.Reward
-	response.Power = resp.Result.Extra.Power
+	bp, err :=  strconv.ParseInt(resp.Result.Extra.Power, 10, 64)
+	if err != nil{
+		return
+	}
+	bt, err :=  strconv.ParseInt(reward.Result.Reward, 10, 64)
+	if err != nil{
+		return
+	}
+	response.Power =  bp
+	response.Reward = bt
 	return
 }
-
+//Obtain the cost of the miner's computing power
 func GetMiningCost() (response model.MiningCost, err error) {
 	btr := bytes.NewReader([]byte(consts.PledgeperteraBody))
 	r, err := http.Post(consts.FilsUrl, consts.ContentType, btr)

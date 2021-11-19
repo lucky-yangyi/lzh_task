@@ -12,7 +12,7 @@ import (
 //A scheduled task to obtain node benefits
 func TaskStart() {
 	c := cron.New() //精确到秒
-	if err := c.AddFunc("* 30 0 * * *", SpiderFilscan); err != nil {
+	if err := c.AddFunc("0 30 00 * * *", SpiderFilscan); err != nil {
 		panic(err)
 	}
 	c.Start()
